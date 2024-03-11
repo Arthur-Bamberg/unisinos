@@ -1,0 +1,3 @@
+**Exercício 3.** Quais são os dois principais processos de tradução de linguagens de alto nível para linguagem de máquina? Diferencie-os.
+
+São os processos de interpretação e compilação. O processo de interpretação passa por um programa, chamado interpretador, que com o código fonte, executa as instruções uma a uma conforme codificado. Já a compilação passa pelo compilador, programa que recebe códigos fonte e cria um arquivo código objeto, com intruções de baixo nível,  traduzidas para a linguagem de máquina.
