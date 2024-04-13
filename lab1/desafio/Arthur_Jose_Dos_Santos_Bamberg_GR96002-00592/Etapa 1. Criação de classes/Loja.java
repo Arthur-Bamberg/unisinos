@@ -1,9 +1,9 @@
 public class Loja {
     private String nome;
     private int quantidadeFuncionarios;
-    private float salarioBaseFuncionario;
+    private double salarioBaseFuncionario;
 
-    public Loja(String nome, int quantidadeFuncionarios, float salarioBaseFuncionario) {
+    public Loja(String nome, int quantidadeFuncionarios, double salarioBaseFuncionario) {
         this.nome = nome;
         this.quantidadeFuncionarios = quantidadeFuncionarios;
         this.salarioBaseFuncionario = salarioBaseFuncionario;
@@ -13,6 +13,24 @@ public class Loja {
         this.nome = nome;
         this.quantidadeFuncionarios = quantidadeFuncionarios;
         this.salarioBaseFuncionario = -1;
+    }
+
+    public double gastosComSalario() {
+        if (this.salarioBaseFuncionario == -1) {
+            return -1;
+        }
+
+        return this.quantidadeFuncionarios * this.salarioBaseFuncionario;
+    }
+
+    public char tamanhoDaLoja() {
+        if (this.quantidadeFuncionarios <= 10) {
+            return 'P';
+        } else if (this.quantidadeFuncionarios <= 30) {
+            return 'M';
+        } else {
+            return 'G';
+        }
     }
 
     public String getNome() {
@@ -31,11 +49,11 @@ public class Loja {
         this.quantidadeFuncionarios = quantidadeFuncionarios;
     }
 
-    public float getSalarioBaseFuncionario() {
+    public double getSalarioBaseFuncionario() {
         return salarioBaseFuncionario;
     }
 
-    public void setSalarioBaseFuncionario(float salarioBaseFuncionario) {
+    public void setSalarioBaseFuncionario(double salarioBaseFuncionario) {
         this.salarioBaseFuncionario = salarioBaseFuncionario;
     }
 

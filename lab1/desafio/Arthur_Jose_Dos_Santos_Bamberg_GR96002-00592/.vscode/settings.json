@@ -1,0 +1,10 @@
+{
+    "java.project.sourcePaths": [
+        "Etapa 1. Criação de classes",
+        "Etapa 2. Associação entre classes"
+    ],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar"
+    ]
+}
