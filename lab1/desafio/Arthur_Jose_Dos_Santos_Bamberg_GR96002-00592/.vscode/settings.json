@@ -1,10 +1,17 @@
 {
     "java.project.sourcePaths": [
         "Etapa 1. Criação de classes",
-        "Etapa 2. Associação entre classes"
+        "Etapa 2. Associação entre classes",
+        "Etapa 3. Herança e Polimorfismo",
     ],
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
         "lib/**/*.jar"
-    ]
+    ],
+        "editor.formatOnSave": true,
+        "editor.formatOnSaveMode": "file",
+        "editor.defaultFormatter": "redhat.java",
+        "[jsonc]": {
+            "editor.defaultFormatter": "vscode.json-language-features"
+        },
 }
